@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Crazy Grid QR code component </title>  
+</head>
+<body>
+  <div class="container">
+    <div class="qr">
+      <div class="circle-one"></div>
+      <div class="circle-two"></div>
+      <div class="code">
+      </div>
+    </div>
+
+  <p>Improve your front-end<br> skills by building projects</p>
+
+  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lucian Ioan Chirila</a>.
+    </div>
+  </div>
+  <script>
+    const codeDiv = document.querySelector('.code');
+    const numItems = 841; // Change this to the number of grid items you want
+
+    for (let i = 0; i < numItems; i++) {
+    const gridItem = document.createElement('div');
+    gridItem.classList.add('grid-item');
+    codeDiv.appendChild(gridItem);
+}
+    </script> 
+</body>
+</html>
